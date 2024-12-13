@@ -1,0 +1,89 @@
+package inventory;
+
+public class Product {
+
+	private int itemNumber;
+	private String name;
+	private int qtyInStock;
+	private double price;
+	
+	public Product (int number, String name, int qty , double price )
+
+	{
+		
+		this.itemNumber = number;
+		this.name = name;
+		this.qtyInStock = qty;
+		this.price = price;
+			
+	}
+	
+	public Product(double d, int i, double e) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getInNumber ()
+	
+	{ return itemNumber ;
+	
+	}
+	
+	
+	public void setIntemNumber(int intemNumber, int itemNumber)
+	
+	{
+	 this.itemNumber = itemNumber;
+	 
+	}
+	
+	
+	public String getName ()
+	
+	{
+        return name;
+	}
+	
+	
+	public void setName(String Name, String name)
+	
+	{
+		this.name = name; 
+	}
+	
+	
+	public int getQtyInStock ()
+	
+	{
+		return qtyInStock;
+	}
+	
+	public void setQtyInStock(int qtyInStock )
+	
+	{
+		this.qtyInStock = qtyInStock;
+	}
+	
+	public double getPrice()
+	
+	{
+		return price;
+	}
+	
+	public void setPrice(double price)
+	
+	{
+		this.price = price;
+		
+	}
+	
+	public String toString()
+	
+	{
+		return    "\n\nItem Number        : " + this.itemNumber
+	              + "\nName               : " + this.name
+			      + "\nQuantity in stock  : " + this.qtyInStock
+			      + "\nPrice              : " + this.price;
+			  
+	}
+	
+}
